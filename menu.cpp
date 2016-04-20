@@ -3,6 +3,7 @@
 void display_bargraph();
 void display_pigraph();
 void display_graph3();
+void init_values();
 void menu(int id)
 {
   switch(id)
@@ -17,6 +18,8 @@ void menu(int id)
 
       case 3: display_graph3();
               break;
+      case 4: init_values();
+              break;
 
    }
   glutPostRedisplay();
@@ -28,6 +31,7 @@ void showmenu()
     glutAddMenuEntry("bar graph",1);
     glutAddMenuEntry("pi graph",2);
     glutAddMenuEntry("graph3",3);
+    glutAddMenuEntry("add values",4)
     glutAttachMenu(GLUT_RIGHT_BUTTON);
 }
 void display()
@@ -64,7 +68,10 @@ void display_graph3()
 {
     /* enter the code here */
 }
-
+void init_values()
+{
+  /* enter the values for some variables */
+}
 
 
 
